@@ -1,0 +1,23 @@
+{
+  "generator": "aml-synthetic-data",
+  "version": "0.1.0",
+  "synthetic": true,
+  "config": {
+    "customers": 1000,
+    "months": 9,
+    "start": "2025-01-01",
+    "end": "2025-09-30",
+    "seed": 7,
+    "branches": 60,
+    "threshold_amd": 2000000,
+    "scenarios_per_typology": 6,
+    "lookalikes_per_scenario": 3.0
+  },
+  "counts": {
+    "customers": 1000,
+    "transactions": 63273,
+    "suspicious_transactions": 682,
+    "suspicious_scenarios": 54,
+    "lookalike_scenarios": 162
+  }
+}

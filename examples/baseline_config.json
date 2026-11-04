@@ -1,0 +1,48 @@
+{
+  "cash_structuring": {
+    "band": 0.8,
+    "min_count": 3,
+    "window_days": 7
+  },
+  "fan_in": {
+    "min_senders": 5,
+    "window_days": 5,
+    "cashout_ratio": 0.0
+  },
+  "fan_out": {
+    "min_funding_amd": 500000,
+    "min_recipients": 4,
+    "window_days": 5
+  },
+  "pass_through": {
+    "ratio": 0.8,
+    "window_hours": 72,
+    "min_amount": 100000,
+    "min_events": 1
+  },
+  "dormant_wakeup": {
+    "dormant_days": 60,
+    "burst_days": 14,
+    "min_multiple": 3.0,
+    "min_amount": 500000
+  },
+  "branch_hopping": {
+    "min_regions": 2,
+    "window_hours": 48
+  },
+  "circular": {
+    "window_days": 30,
+    "tolerance": 0.2,
+    "min_cycle_len": 2
+  },
+  "overpayment_refund": {
+    "min_amount": 300000,
+    "refund_ratio": 0.1,
+    "window_days": 60
+  },
+  "profile_deviation": {
+    "multiple": 2.0,
+    "min_amount": 300000,
+    "consecutive_months": 1
+  }
+}

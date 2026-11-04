@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alert-tuning-lab"
+version = "0.1.0"
+description = "Threshold tuning, below-the-line testing and tuning documentation for AML transaction-monitoring rules, with ground-truth evaluation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ara Avetisyan" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+alert-tuning = "alert_tuning.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+alert_tuning = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
